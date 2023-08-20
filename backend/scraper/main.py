@@ -1,10 +1,7 @@
-import json
-import os
+from chapters import *
 
-mangaFourLife = "https://manga4life.com"
 
-URLs = {
-    mangaFourLife: {
-        
-    }
-}
+if __name__ == "__main__":
+    instance = Chapters()
+    instance.getMangaList()
+    instance.getChapters("Black Clover")
